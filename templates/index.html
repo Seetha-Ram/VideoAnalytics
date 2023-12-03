@@ -1,0 +1,18 @@
+<!-- /flask_app/templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Similarity</title>
+</head>
+<body>
+    <h1>Video Similarity</h1>
+    <form action="/video_similarity" method="post" enctype="multipart/form-data">
+        <input type="file" name="file1" accept=".mp4"><br>
+        <input type="file" name="file2" accept=".mp4"><br>
+        <input type="submit" value="Process Videos">
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- /video_similarity/templates/result.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Difference Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        p {
+            color: #666666;
+        }
+
+        video {
+            width: 640px;
+            height: 480px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Difference Result</h1>
+
+    <!-- Display the processed difference video -->
+    <video width="640" height="480" controls>
+        <source src="{{ difference_video_path }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>

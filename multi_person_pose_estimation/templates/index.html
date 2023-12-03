@@ -1,0 +1,31 @@
+<!-- /multi_person_pose_estimation/templates/index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Person Pose Estimation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        p {
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multi Person Pose Estimation</h1>
+    <form action="/multi_person_pose_estimation/video_feed" method="post" enctype="multipart/form-data">
+        <input type="file" name="video">
+        <input type="submit" value="Upload Video">
+    </form>
+    <br>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+</body>
+</html>
